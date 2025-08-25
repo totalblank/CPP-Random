@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/srabon/cpp_random/build/gcc-debug",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/cpp_random.dir/src/main.cpp.o -c /home/srabon/cpp_random/src/main.cpp",
+  "file": "/home/srabon/cpp_random/src/main.cpp",
+  "output": "/home/srabon/cpp_random/build/gcc-debug/CMakeFiles/cpp_random.dir/src/main.cpp.o"
+}
+]

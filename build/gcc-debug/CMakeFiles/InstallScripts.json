@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/srabon/cpp_random/build/gcc-debug/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
