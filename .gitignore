@@ -1,0 +1,58 @@
+# --- Build artifacts ---
+/build/
+/out/
+/bin/
+/lib/
+/CMakeFiles/
+/CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# --- Compiled objects & binaries ---
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.so
+*.so.*
+*.dylib
+*.dll
+*.lib
+*.exe
+*.out
+*.app
+
+# --- Debugging / profiling ---
+*.dSYM/
+*.su
+*.prof
+*.gcda
+*.gcno
+*.gcov
+
+# --- IDE / Editor files ---
+.vscode/
+.idea/
+*.swp
+*~
+*.user
+*.workspace
+*.project
+*.suo
+*.ncb
+*.pdb
+*.idb
+
+# --- Logs & misc ---
+*.log
+*.tmp
+*.cache
+*.bak
+
+# --- Package managers (optional) ---
+/conanbuildinfo.*
+/conan.lock
+/vcpkg_installed/
+
