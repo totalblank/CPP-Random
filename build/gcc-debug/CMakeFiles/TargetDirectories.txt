@@ -1,3 +1,3 @@
-/home/srabon/cpp_random/build/gcc-debug/CMakeFiles/cpp_random.dir
+/home/srabon/cpp_random/build/gcc-debug/CMakeFiles/demo.dir
 /home/srabon/cpp_random/build/gcc-debug/CMakeFiles/edit_cache.dir
 /home/srabon/cpp_random/build/gcc-debug/CMakeFiles/rebuild_cache.dir

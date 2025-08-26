@@ -5,11 +5,13 @@ set(CMAKE_CXX_STANDARDS 20)
 set(CMAKE_CXX_STANDARDS_REQUIRED ON)
 
 # Define library targets
-# add_library(mathlib SHARED src/mathlib.cpp)
-# target_include_directories(mathlib PUBLIC ${CMAKE_SOURCE_DIR}/include)
+add_library(ADT
+    INTERFACE
+)
+target_include_directories(ADT INTERFACE ${CMAKE_SOURCE_DIR}/include)
 
-# Define an executable target
-add_executable(cpp_random src/main.cpp)
+# Executables / libs
+add_executable(demo src/main.cpp)
 
-# Link the library into the executable
-#target_link_libraries(cpp_random PRIVATE mathlib)
+# Link the header target so they inherit the include path
+target_link_libraries(demo PRIVATE ADT)
