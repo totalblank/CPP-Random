@@ -28,6 +28,7 @@ myproj/
 
 # 🔹 `CMakeLists.txt` explained
 
+```CMake
 cmake_minimum_required(VERSION 3.16)
 project(myproj LANGUAGES CXX)
 
@@ -49,37 +50,36 @@ add_executable(other src/other.cpp)
 ## (4) Link them against adt_headers
 target_link_libraries(app   PRIVATE adt_headers)
 target_link_libraries(other PRIVATE adt_headers)
+```
 
 ---
 
-## 🔸 Step (1) → add_library(adt_headers INTERFACE)
+## 🔸 Step (1) → `add_library(adt_headers INTERFACE)`
 
 Creates a “dummy” library target called adt_headers. It won’t build to a .so or .a, but
 you can attach include paths, compile features, etc. to it.
 
-## 🔸 Step (2) → target_include_directories(... INTERFACE …)
+## 🔸 Step (2) → `target_include_directories(... INTERFACE …)`
 
 Says:
 
-Any target that links to adt_headers should have ${CMAKE_SOURCE_DIR}/include added to its include path.
+Any target that links to `adt_headers` should have `${CMAKE_SOURCE_DIR}/include` added to its include path.
 
 So clang/g++/clangd will know to look in `include/` whenever you write #include `<ADT/...>`.
 
 
-## 🔸 Step (3) → add_executable(app …)
+## 🔸 Step (3) → `add_executable(app …)`
 
 Defines actual binaries (app, other) that will consume your ADTs.
 
-## 🔸 Step (4) → target_link_libraries(app PRIVATE adt_headers)
+## 🔸 Step (4) → `target_link_libraries(app PRIVATE adt_headers)`
 
 Links app against the header-only target, which means:
 
 - app now sees all headers inside `include/.`
-
 - clangd sees that path in `compile_commands.json`.
 
 If you later add compile flags or macros to adt_headers, app gets them automatically.
-
 
 
 ---
