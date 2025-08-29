@@ -1,8 +1,20 @@
 [
 {
   "directory": "/home/srabon/cpp_random/build/gcc-debug",
-  "command": "/usr/bin/g++ -I/home/srabon/cpp_random/include -g -o CMakeFiles/demo.dir/src/main.cpp.o -c /home/srabon/cpp_random/src/main.cpp",
+  "command": "/usr/bin/g++ -I/home/srabon/cpp_random/include -I/home/srabon/cpp_random/build/gcc-debug/_deps/fmt-src/include -g -o CMakeFiles/demo.dir/src/main.cpp.o -c /home/srabon/cpp_random/src/main.cpp",
   "file": "/home/srabon/cpp_random/src/main.cpp",
   "output": "/home/srabon/cpp_random/build/gcc-debug/CMakeFiles/demo.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/srabon/cpp_random/build/gcc-debug",
+  "command": "/usr/bin/g++ -I/home/srabon/cpp_random/build/gcc-debug/_deps/fmt-src/include -g -o _deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.o -c /home/srabon/cpp_random/build/gcc-debug/_deps/fmt-src/src/format.cc",
+  "file": "/home/srabon/cpp_random/build/gcc-debug/_deps/fmt-src/src/format.cc",
+  "output": "/home/srabon/cpp_random/build/gcc-debug/_deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.o"
+},
+{
+  "directory": "/home/srabon/cpp_random/build/gcc-debug",
+  "command": "/usr/bin/g++ -I/home/srabon/cpp_random/build/gcc-debug/_deps/fmt-src/include -g -o _deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.o -c /home/srabon/cpp_random/build/gcc-debug/_deps/fmt-src/src/os.cc",
+  "file": "/home/srabon/cpp_random/build/gcc-debug/_deps/fmt-src/src/os.cc",
+  "output": "/home/srabon/cpp_random/build/gcc-debug/_deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.o"
 }
 ]
